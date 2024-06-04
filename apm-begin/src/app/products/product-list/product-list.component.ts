@@ -21,9 +21,9 @@ export class ProductListComponent {
   // Products
   products = this.productService.products;
   errorMessage = this.productService.productsError;
-  
+
   // Selected product id to highlight the entry
-  readonly selectedProductId$ = this.productService.productSelected$;
+  selectedProductId = this.productService.selectedProductId;
 
   onSelected(productId: number): void {
     this.productService.productSelected(productId);
